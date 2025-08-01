@@ -3,11 +3,9 @@
 # to run in that case
 set -e
 
-# Set the JENKINS_HOME environment variable. This will cause
-# Jenkins will run from this directory.
-# Create the JENKINS_HOME directory if it doesn't exist.
-export JENKINS_HOME=~/webpage_ws/jenkins
-mkdir -p $JENKINS_HOME
+# Set JENKINS_HOME relative to the script's directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export JENKINS_HOME="$SCRIPT_DIR/jenkins"
 
 # Install java. We are using JRE 17.
 sudo apt-get update -y || true
@@ -15,7 +13,7 @@ sudo apt-get install -y openjdk-17-jre
 
 # Download the Jenkins .war file, if not there already
 cd ~
-JENKINS_FILE="/home/user/jenkins.war"
+JENKINS_FILE="jenkins.war"
 if [ ! -f "$JENKINS_FILE" ]; then
     wget https://updates.jenkins.io/download/war/2.463/jenkins.war
 fi
@@ -57,20 +55,4 @@ else
     echo "Jenkins URL: " >> $STATE_FILE
     echo $URL >> $STATE_FILE
     echo "3. See '$STATE_FILE' for Jenkins PID and URL."
-
-    # Start the ROS script that TAKES OFF the drone in the background
-    # Capture the process ID of that script in TAKEOFF_ID
-    # Wait for 15 seconds and then kill the process
-    # rostopic pub /drone/takeoff std_msgs/Empty '{}' &
-    # TAKEOFF_ID=$!
-    # sleep 15s
-    # kill $TAKEOFF_ID
-
-    # Start the ROS script that LANDS the drone
-    # Capture the process ID of that script in LAND_ID
-    # Wait for 5 seconds and then kill the process
-    # rostopic pub /drone/land std_msgs/Empty '{}' &
-    # LAND_ID=$!
-    # sleep 5s
-    # kill $LAND_ID
 fi
