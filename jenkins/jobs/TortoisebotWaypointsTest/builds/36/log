@@ -1,0 +1,145 @@
+Started by user [8mha:////4DlyfUWKjPYAWx9pM5RfCnLNUEKc41ML4XlwjJeMCXUkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /home/user/webpage_ws/jenkins/workspace/TortoisebotWaypointsTest
+The recommended git tool is: NONE
+using credential bb065630-6d9d-4747-b639-01c1f48660f1
+ > git rev-parse --resolve-git-dir /home/user/webpage_ws/jenkins/workspace/TortoisebotWaypointsTest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kuralme/ros1_ci.git # timeout=10
+Fetching upstream changes from https://github.com/kuralme/ros1_ci.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_SSH to set credentials ROS-Jenkins project git key
+Verifying host key using known hosts file
+[8mha:////4PF4VlyLgzzfbzeX3e2gYob8D8IBL2xsARELGat7rNsMAAAAwB+LCAAAAAAAAP9djLENwjAQRY8gGIAS0VE77ihAVDQgRVAwQRSMfYl1tuwLStZgDWgYgmEo2IFE6fjN+19fes8vTGKAhakv0VFaOIrOqnTfehUsUnV0rFbbx2t79+8EkgNMrSLNJoNxHSzDLCvzWy5tTlqeOSDpTRNg/qfbDexlMGSUADS+Kx+Gk2H2cS2lt7VGimmpqOqJTmpkUVhUxHI53KKTcrdFjEYYF1lUqhU3FfCKRc7o6AcdrEU/1AAAAA==[0mYou're using 'Known hosts file' strategy to verify ssh host keys, but your known_hosts file does not exist, please go to 'Manage Jenkins' -> 'Security' -> 'Git Host Key Verification Configuration' and configure host key verification.
+ > git fetch --tags --force --progress -- https://github.com/kuralme/ros1_ci.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision c59e9b429e6449d4a69f8799eb5aace50faeab6b (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c59e9b429e6449d4a69f8799eb5aace50faeab6b # timeout=10
+Commit message: "headless test added"
+ > git rev-list --no-walk c59e9b429e6449d4a69f8799eb5aace50faeab6b # timeout=10
+[TortoisebotWaypointsTest] $ /bin/bash /tmp/jenkins7791751066286858818.sh
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Get:2 http://packages.ros.org/ros/ubuntu focal InRelease [4679 B]
+Get:3 http://packages.ros.org/ros2/ubuntu focal InRelease [4685 B]
+Hit:4 http://packages.osrfoundation.org/gazebo/ubuntu-stable focal InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal InRelease
+Err:2 http://packages.ros.org/ros/ubuntu focal InRelease
+  The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+Hit:6 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Err:3 http://packages.ros.org/ros2/ubuntu focal InRelease
+  The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+Hit:7 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists...
+W: GPG error: http://packages.ros.org/ros/ubuntu focal InRelease: The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+E: The repository 'http://packages.ros.org/ros/ubuntu focal InRelease' is not signed.
+W: GPG error: http://packages.ros.org/ros2/ubuntu focal InRelease: The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+E: The repository 'http://packages.ros.org/ros2/ubuntu focal InRelease' is not signed.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+docker-compose is already the newest version (1.25.0-1).
+docker.io is already the newest version (26.1.3-0ubuntu1~20.04.1).
+The following packages were automatically installed and are no longer required:
+  cppcheck pydocstyle pyflakes pyflakes3 python-pyflakes python3-entrypoints
+  python3-flake8 python3-ifcfg python3-mccabe python3-pycodestyle
+  python3-pydocstyle python3-pyflakes python3-snowballstemmer
+  ros-galactic-action-tutorials-cpp ros-galactic-action-tutorials-interfaces
+  ros-galactic-action-tutorials-py ros-galactic-ament-cmake-auto
+  ros-galactic-ament-cmake-copyright ros-galactic-ament-cmake-cppcheck
+  ros-galactic-ament-cmake-cpplint ros-galactic-ament-cmake-flake8
+  ros-galactic-ament-cmake-lint-cmake ros-galactic-ament-cmake-pep257
+  ros-galactic-ament-cmake-uncrustify ros-galactic-ament-cmake-xmllint
+  ros-galactic-ament-copyright ros-galactic-ament-cppcheck
+  ros-galactic-ament-cpplint ros-galactic-ament-flake8 ros-galactic-ament-lint
+  ros-galactic-ament-lint-auto ros-galactic-ament-lint-cmake
+  ros-galactic-ament-lint-common ros-galactic-ament-pep257
+  ros-galactic-ament-xmllint ros-galactic-composition
+  ros-galactic-demo-nodes-cpp ros-galactic-demo-nodes-cpp-native
+  ros-galactic-demo-nodes-py ros-galactic-depthimage-to-laserscan
+  ros-galactic-dummy-map-server ros-galactic-dummy-sensors
+  ros-galactic-examples-rclcpp-minimal-action-client
+  ros-galactic-examples-rclcpp-minimal-action-server
+  ros-galactic-examples-rclcpp-minimal-client
+  ros-galactic-examples-rclcpp-minimal-composition
+  ros-galactic-examples-rclcpp-minimal-publisher
+  ros-galactic-examples-rclcpp-minimal-service
+  ros-galactic-examples-rclcpp-minimal-subscriber
+  ros-galactic-examples-rclcpp-minimal-timer
+  ros-galactic-examples-rclcpp-multithreaded-executor
+  ros-galactic-examples-rclpy-executors
+  ros-galactic-examples-rclpy-minimal-action-client
+  ros-galactic-examples-rclpy-minimal-action-server
+  ros-galactic-examples-rclpy-minimal-client
+  ros-galactic-examples-rclpy-minimal-publisher
+  ros-galactic-examples-rclpy-minimal-service
+  ros-galactic-examples-rclpy-minimal-subscriber ros-galactic-image-geometry
+  ros-galactic-image-tools ros-galactic-intra-process-demo
+  ros-galactic-launch-testing-ros ros-galactic-launch-yaml
+  ros-galactic-lifecycle ros-galactic-logging-demo
+  ros-galactic-pcl-conversions ros-galactic-pcl-msgs
+  ros-galactic-pendulum-control ros-galactic-pendulum-msgs
+  ros-galactic-qt-dotgraph ros-galactic-qt-gui-cpp
+  ros-galactic-qt-gui-py-common ros-galactic-quality-of-service-demo-cpp
+  ros-galactic-quality-of-service-demo-py ros-galactic-ros-core
+  ros-galactic-ros-environment ros-galactic-ros2action ros-galactic-ros2bag
+  ros-galactic-ros2cli-common-extensions ros-galactic-ros2component
+  ros-galactic-ros2doctor ros-galactic-ros2interface ros-galactic-ros2launch
+  ros-galactic-ros2lifecycle ros-galactic-ros2multicast ros-galactic-ros2topic
+  ros-galactic-rosbag2 ros-galactic-rosbag2-compression
+  ros-galactic-rosbag2-compression-zstd ros-galactic-rosbag2-cpp
+  ros-galactic-rosbag2-interfaces ros-galactic-rosbag2-py
+  ros-galactic-rosbag2-storage ros-galactic-rosbag2-storage-default-plugins
+  ros-galactic-rosbag2-transport ros-galactic-rqt-action ros-galactic-rqt-bag
+  ros-galactic-rqt-bag-plugins ros-galactic-rqt-common-plugins
+  ros-galactic-rqt-console ros-galactic-rqt-graph ros-galactic-rqt-gui-cpp
+  ros-galactic-rqt-image-view ros-galactic-rqt-msg ros-galactic-rqt-plot
+  ros-galactic-rqt-publisher ros-galactic-rqt-py-console
+  ros-galactic-rqt-reconfigure ros-galactic-rqt-service-caller
+  ros-galactic-rqt-shell ros-galactic-rqt-srv ros-galactic-rqt-top
+  ros-galactic-rttest ros-galactic-shared-queues-vendor
+  ros-galactic-sqlite3-vendor ros-galactic-sros2 ros-galactic-sros2-cmake
+  ros-galactic-tlsf ros-galactic-tlsf-cpp ros-galactic-topic-monitor
+  ros-galactic-turtlesim ros-galactic-zstd-vendor
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 541 not upgraded.
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  28.26MB
+Step 1/9 : FROM osrf/ros:noetic-desktop-full-focal
+ ---> 69a38b2c0905
+Step 2/9 : ENV LANG C.UTF-8
+ ---> Using cache
+ ---> ff4b3a73e035
+Step 3/9 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Using cache
+ ---> 215917c18e7a
+Step 4/9 : SHELL [ "/bin/bash" , "-c" ]
+ ---> Using cache
+ ---> e27a2d31fec9
+Step 5/9 : RUN apt-get update && apt-get upgrade -y && apt-get install -y   gazebo11   ros-noetic-gazebo-ros-pkgs   ros-noetic-gazebo-ros-control   ros-noetic-ros-control   ros-noetic-ros-controllers   ros-noetic-joint-state-publisher   ros-noetic-joint-state-controller   ros-noetic-robot-state-publisher   ros-noetic-robot-localization   ros-noetic-xacro   ros-noetic-tf2-ros   ros-noetic-tf2-tools   && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> ca9e667ba3f4
+Step 6/9 : RUN mkdir -p /simulation_ws/src
+ ---> Using cache
+ ---> 7b3b571bffe3
+Step 7/9 : COPY ./tortoisebot /simulation_ws/src/tortoisebot
+ ---> Using cache
+ ---> 777178fa3c62
+Step 8/9 : COPY ./tortoisebot_waypoints /simulation_ws/src/tortoisebot_waypoints
+ ---> Using cache
+ ---> 6f42e962ec43
+Step 9/9 : RUN source /opt/ros/noetic/setup.bash && cd /simulation_ws && catkin_make   && echo "source /simulation_ws/devel/setup.bash" >> ~/.bashrc
+ ---> Using cache
+ ---> 65d476901233
+Successfully built 65d476901233
+Successfully tagged tortoisebot-ros-test:latest
+[TortoisebotWaypointsTest] $ /bin/bash /tmp/jenkins11792637683781762686.sh
+[33m[WARN] [1753810535.455605561]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.[0m
+[33m[WARN] [1753810538.471301136, 1072.105000000]: DiffDrive(ns = //): missing <rosDebugLevel> default is na[0m
+[33m[WARN] [1753810538.472040977, 1072.105000000]: DiffDrive(ns = //): <odometrySource> no matching key to 0[0m
+[33m[WARN] [1753810538.472120245, 1072.105000000]: GazeboRosDiffDrive Plugin (ns = ) missing <publishTf>, defaults to 1[0m
+Finished: SUCCESS

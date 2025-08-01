@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: runner
+Build-Jdk: 11.0.22
+Extension-Name: github-pr-comment-build
+Specification-Title: Allows rebuilds of multibranch PR jobs based on G
+ itHub PR comments.
+Implementation-Title: github-pr-comment-build
+Implementation-Version: 103.vc8919acf2a6b
+Group-Id: org.jenkins-ci.plugins
+Short-Name: github-pr-comment-build
+Long-Name: GitHub PR Comment Build Plugin
+Url: https://github.com/jenkinsci/github-pr-comment-build-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 103.vc8919acf2a6b
+Hudson-Version: 2.176.4
+Jenkins-Version: 2.176.4
+Plugin-Dependencies: branch-api:2.5.8,github-branch-source:2.4.0
+Plugin-Developers: 
+Plugin-License-Name: MIT
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/github-pr-comment-build-pl
+ ugin
+

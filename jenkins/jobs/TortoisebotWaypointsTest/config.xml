@@ -1,0 +1,64 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>A project for testing ROS Tortoisebot in Gazebo/Docker environment.</description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@5.5.2">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/kuralme/ros1_ci.git</url>
+        <credentialsId>bb065630-6d9d-4747-b639-01c1f48660f1</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/*</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="empty-list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers>
+    <com.cloudbees.jenkins.GitHubPushTrigger plugin="github@1.40.0">
+      <spec></spec>
+    </com.cloudbees.jenkins.GitHubPushTrigger>
+  </triggers>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+# Install docker
+if ! command -v docker &amp;&gt; /dev/null; then
+    echo &quot;Docker is not installed. Installing now...&quot;
+    sudo apt-get update
+    sudo apt-get install -y docker.io
+    sudo service docker start
+
+    echo &quot;Docker is installed successfully!&quot;
+fi
+
+# Build the ros docker image
+cd ~/simulation_ws/src/ros1_ci
+sudo docker build -t tortoisebot-ros-test .
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash
+# Start the container and run the gazebo/rostest node
+sudo docker run --rm tortoisebot-ros-test:latest \
+    bash -c &quot;source /simulation_ws/devel/setup.bash &amp;&amp; rostest tortoisebot_gazebo test_tortoisebot_waypoints.launch&quot;
+</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

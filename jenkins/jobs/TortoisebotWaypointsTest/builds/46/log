@@ -1,0 +1,121 @@
+Started by user [8mha:////4DlyfUWKjPYAWx9pM5RfCnLNUEKc41ML4XlwjJeMCXUkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /home/user/webpage_ws/jenkins/workspace/TortoisebotWaypointsTest
+The recommended git tool is: NONE
+using credential bb065630-6d9d-4747-b639-01c1f48660f1
+ > git rev-parse --resolve-git-dir /home/user/webpage_ws/jenkins/workspace/TortoisebotWaypointsTest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kuralme/ros1_ci.git # timeout=10
+Fetching upstream changes from https://github.com/kuralme/ros1_ci.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_SSH to set credentials ROS-Jenkins project git key
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- https://github.com/kuralme/ros1_ci.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision a68bb88a7b16352aa6af0823185e149c377870a2 (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a68bb88a7b16352aa6af0823185e149c377870a2 # timeout=10
+Commit message: "removed test files"
+ > git rev-list --no-walk a68bb88a7b16352aa6af0823185e149c377870a2 # timeout=10
+[TortoisebotWaypointsTest] $ /bin/bash /tmp/jenkins902223603166809870.sh
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  28.31MB
+Step 1/9 : FROM osrf/ros:noetic-desktop-full-focal
+ ---> 69a38b2c0905
+Step 2/9 : ENV LANG C.UTF-8
+ ---> Using cache
+ ---> 45488c468f83
+Step 3/9 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Using cache
+ ---> 7ba41998a207
+Step 4/9 : SHELL [ "/bin/bash" , "-c" ]
+ ---> Using cache
+ ---> 443d7d5a6b32
+Step 5/9 : RUN apt-get update && apt-get upgrade -y && apt-get install -y   gazebo11   ros-noetic-gazebo-ros-pkgs   ros-noetic-gazebo-ros-control   ros-noetic-ros-control   ros-noetic-ros-controllers   ros-noetic-joint-state-publisher   ros-noetic-joint-state-controller   ros-noetic-robot-state-publisher   ros-noetic-robot-localization   ros-noetic-xacro   ros-noetic-tf2-ros   ros-noetic-tf2-tools   && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> be79f266fcf9
+Step 6/9 : RUN mkdir -p /simulation_ws/src
+ ---> Using cache
+ ---> 020f36b43814
+Step 7/9 : COPY ./tortoisebot /simulation_ws/src/tortoisebot
+ ---> Using cache
+ ---> 1a9c8725c37e
+Step 8/9 : COPY ./tortoisebot_waypoints /simulation_ws/src/tortoisebot_waypoints
+ ---> Using cache
+ ---> 080d66aca657
+Step 9/9 : RUN source /opt/ros/noetic/setup.bash && cd /simulation_ws && catkin_make   && echo "source /simulation_ws/devel/setup.bash" >> ~/.bashrc
+ ---> Using cache
+ ---> ff97bfb0e630
+Successfully built ff97bfb0e630
+Successfully tagged tortoisebot-ros-test:latest
+[TortoisebotWaypointsTest] $ /bin/bash /tmp/jenkins12585129352424927799.sh
+[33m[WARN] [1753906931.548270173]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.[0m
+[33m[WARN] [1753906933.224183815, 1072.300000000]: DiffDrive(ns = //): missing <rosDebugLevel> default is na[0m
+[33m[WARN] [1753906933.224849027, 1072.300000000]: DiffDrive(ns = //): <odometrySource> no matching key to 0[0m
+[33m[WARN] [1753906933.224899419, 1072.300000000]: GazeboRosDiffDrive Plugin (ns = ) missing <publishTf>, defaults to 1[0m
+[0m[INFO] [1753906932.100111154]: Finished loading Gazebo ROS API Plugin.[0m
+[0m[INFO] [1753906932.101053728]: waitForService: Service [/gazebo/set_physics_properties] has not been advertised, waiting...[0m
+[0m[INFO] [1753906932.325804094]: waitForService: Service [/gazebo/set_physics_properties] is now available.[0m
+[0m[INFO] [1753906932.344324459]: Physics dynamic reconfigure ready.[0m
+[0m[INFO] [1753906932.999604901, 1072.300000000]: Laser Plugin: Using the 'robotNamespace' param: '/'[0m
+[0m[INFO] [1753906932.999668596, 1072.300000000]: Starting Laser Plugin (ns = /)[0m
+[0m[INFO] [1753906933.001347854, 1072.300000000]: Laser Plugin (ns = /)  <tf_prefix_>, set to ""[0m
+[0m[INFO] [1753906933.100680767, 1072.300000000]: Loading gazebo_ros_control plugin[0m
+[0m[INFO] [1753906933.100780091, 1072.300000000]: Starting gazebo_ros_control plugin in namespace: /tortoisebot[0m
+[0m[INFO] [1753906933.101240808, 1072.300000000]: gazebo_ros_control plugin is waiting for model URDF in parameter [/robot_description] on the ROS param server.[0m
+[0m[INFO] [1753906933.216706969, 1072.300000000]: Loaded gazebo_ros_control.[0m
+[0m[INFO] [1753906933.224137703, 1072.300000000]: Starting plugin DiffDrive(ns = //)[0m
+[0m[INFO] [1753906933.224711264, 1072.300000000]: DiffDrive(ns = //): <tf_prefix> = [0m
+[0m[INFO] [1753906933.225376124, 1072.300000000]: DiffDrive(ns = //): Advertise joint_states[0m
+[0m[INFO] [1753906933.225773346, 1072.300000000]: DiffDrive(ns = //): Try to subscribe to cmd_vel[0m
+[0m[INFO] [1753906933.227246470, 1072.300000000]: DiffDrive(ns = //): Subscribe to cmd_vel[0m
+[0m[INFO] [1753906933.227675285, 1072.300000000]: DiffDrive(ns = //): Advertise odom on odom [0m
+[ERROR] [1753906954.813999, 1092.967000]: Exception in your execute callback: ROS shutdown request
+Traceback (most recent call last):
+  File "/opt/ros/noetic/lib/python3/dist-packages/actionlib/simple_action_server.py", line 288, in executeLoop
+    self.execute_callback(goal)
+  File "/simulation_ws/src/tortoisebot_waypoints/scripts/tortoisebot_action_server.py", line 112, in goal_callback
+    self._rate.sleep()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 103, in sleep
+    sleep(self._remaining(curr_time))
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/timer.py", line 165, in sleep
+    raise rospy.exceptions.ROSInterruptException("ROS shutdown request")
+rospy.exceptions.ROSInterruptException: ROS shutdown request
+
+... logging to /root/.ros/log/rostest-7547ebb24bf4-1.log
+[ROSUNIT] Outputting test results to /root/.ros/test_results/tortoisebot_gazebo/rostest-test_test_tortoisebot_waypoints.xml
+[Testcase: testwaypoints_test] ... ok
+
+[ROSTEST]-----------------------------------------------------------------------
+
+[tortoisebot_gazebo.rosunit-waypoints_test/test_goal_1][passed]
+[tortoisebot_gazebo.rosunit-waypoints_test/test_goal_2][FAILURE]----------------
+unexpectedly None : No result returned for goal 2
+  File "/usr/lib/python3.8/unittest/case.py", line 60, in testPartExecutor
+    yield
+  File "/usr/lib/python3.8/unittest/case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.8/unittest/case.py", line 633, in _callTestMethod
+    method()
+  File "/simulation_ws/src/tortoisebot_waypoints/test/waypoints_test_ros_as.py", line 81, in test_goal_2
+    self.assertIsNotNone(result, "No result returned for goal 2")
+  File "/usr/lib/python3.8/unittest/case.py", line 1328, in assertIsNotNone
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/usr/lib/python3.8/unittest/case.py", line 753, in fail
+    raise self.failureException(msg)
+--------------------------------------------------------------------------------
+
+
+SUMMARY
+[1;31m * RESULT: FAIL[0m
+ * TESTS: 2
+ * ERRORS: 0
+[1;31m * FAILURES: 1[0m
+
+rostest log file is in /root/.ros/log/rostest-7547ebb24bf4-1.log
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

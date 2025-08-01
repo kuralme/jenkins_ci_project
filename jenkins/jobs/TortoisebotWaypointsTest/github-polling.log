@@ -1,0 +1,15 @@
+Started on Jul 30, 2025, 8:16:41 PM
+Started by event from 172.25.0.1 ? http://localhost:8080/51594eb6-4ba3-4286-9e06-a75934426c22/jenkins/github-webhook/ on Wed Jul 30 20:16:41 UTC 2025
+Using strategy: Default
+[poll] Last Built Revision: Revision a1085b71206a221ab3ecced20d98792892c5e29c (origin/main)
+The recommended git tool is: NONE
+using credential bb065630-6d9d-4747-b639-01c1f48660f1
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_SSH to set credentials ROS-Jenkins project git key
+Verifying host key using known hosts file
+ > git ls-remote -h -- https://github.com/kuralme/ros1_ci.git # timeout=10
+Found 4 remote heads on https://github.com/kuralme/ros1_ci.git
+[poll] Latest remote head revision on refs/heads/main is: a68bb88a7b16352aa6af0823185e149c377870a2
+Done. Took 0.18 sec
+Changes found

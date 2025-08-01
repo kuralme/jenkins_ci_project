@@ -1,0 +1,327 @@
+Started by user [8mha:////4DlyfUWKjPYAWx9pM5RfCnLNUEKc41ML4XlwjJeMCXUkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building in workspace /home/user/webpage_ws/jenkins/workspace/TortoisebotWaypointsTest
+The recommended git tool is: NONE
+using credential bb065630-6d9d-4747-b639-01c1f48660f1
+ > git rev-parse --resolve-git-dir /home/user/webpage_ws/jenkins/workspace/TortoisebotWaypointsTest/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/kuralme/ros1_ci.git # timeout=10
+Fetching upstream changes from https://github.com/kuralme/ros1_ci.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+using GIT_SSH to set credentials ROS-Jenkins project git key
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- https://github.com/kuralme/ros1_ci.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse origin/main^{commit} # timeout=10
+Checking out Revision c59e9b429e6449d4a69f8799eb5aace50faeab6b (origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c59e9b429e6449d4a69f8799eb5aace50faeab6b # timeout=10
+Commit message: "headless test added"
+ > git rev-list --no-walk 072010774d4a9714175fc52d9df3d6bc5281c5b2 # timeout=10
+[TortoisebotWaypointsTest] $ /bin/bash /tmp/jenkins1571723192119491659.sh
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://packages.osrfoundation.org/gazebo/ubuntu-stable focal InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Get:6 http://packages.ros.org/ros/ubuntu focal InRelease [4679 B]
+Get:7 http://packages.ros.org/ros2/ubuntu focal InRelease [4685 B]
+Err:6 http://packages.ros.org/ros/ubuntu focal InRelease
+  The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+Err:7 http://packages.ros.org/ros2/ubuntu focal InRelease
+  The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+Reading package lists...
+W: GPG error: http://packages.ros.org/ros/ubuntu focal InRelease: The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+E: The repository 'http://packages.ros.org/ros/ubuntu focal InRelease' is not signed.
+W: GPG error: http://packages.ros.org/ros2/ubuntu focal InRelease: The following signatures were invalid: EXPKEYSIG F42ED6FBAB17C654 Open Robotics <info@osrfoundation.org>
+E: The repository 'http://packages.ros.org/ros2/ubuntu focal InRelease' is not signed.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+docker-compose is already the newest version (1.25.0-1).
+docker.io is already the newest version (26.1.3-0ubuntu1~20.04.1).
+The following packages were automatically installed and are no longer required:
+  cppcheck pydocstyle pyflakes pyflakes3 python-pyflakes python3-entrypoints
+  python3-flake8 python3-ifcfg python3-mccabe python3-pycodestyle
+  python3-pydocstyle python3-pyflakes python3-snowballstemmer
+  ros-galactic-action-tutorials-cpp ros-galactic-action-tutorials-interfaces
+  ros-galactic-action-tutorials-py ros-galactic-ament-cmake-auto
+  ros-galactic-ament-cmake-copyright ros-galactic-ament-cmake-cppcheck
+  ros-galactic-ament-cmake-cpplint ros-galactic-ament-cmake-flake8
+  ros-galactic-ament-cmake-lint-cmake ros-galactic-ament-cmake-pep257
+  ros-galactic-ament-cmake-uncrustify ros-galactic-ament-cmake-xmllint
+  ros-galactic-ament-copyright ros-galactic-ament-cppcheck
+  ros-galactic-ament-cpplint ros-galactic-ament-flake8 ros-galactic-ament-lint
+  ros-galactic-ament-lint-auto ros-galactic-ament-lint-cmake
+  ros-galactic-ament-lint-common ros-galactic-ament-pep257
+  ros-galactic-ament-xmllint ros-galactic-composition
+  ros-galactic-demo-nodes-cpp ros-galactic-demo-nodes-cpp-native
+  ros-galactic-demo-nodes-py ros-galactic-depthimage-to-laserscan
+  ros-galactic-dummy-map-server ros-galactic-dummy-sensors
+  ros-galactic-examples-rclcpp-minimal-action-client
+  ros-galactic-examples-rclcpp-minimal-action-server
+  ros-galactic-examples-rclcpp-minimal-client
+  ros-galactic-examples-rclcpp-minimal-composition
+  ros-galactic-examples-rclcpp-minimal-publisher
+  ros-galactic-examples-rclcpp-minimal-service
+  ros-galactic-examples-rclcpp-minimal-subscriber
+  ros-galactic-examples-rclcpp-minimal-timer
+  ros-galactic-examples-rclcpp-multithreaded-executor
+  ros-galactic-examples-rclpy-executors
+  ros-galactic-examples-rclpy-minimal-action-client
+  ros-galactic-examples-rclpy-minimal-action-server
+  ros-galactic-examples-rclpy-minimal-client
+  ros-galactic-examples-rclpy-minimal-publisher
+  ros-galactic-examples-rclpy-minimal-service
+  ros-galactic-examples-rclpy-minimal-subscriber ros-galactic-image-geometry
+  ros-galactic-image-tools ros-galactic-intra-process-demo
+  ros-galactic-launch-testing-ros ros-galactic-launch-yaml
+  ros-galactic-lifecycle ros-galactic-logging-demo
+  ros-galactic-pcl-conversions ros-galactic-pcl-msgs
+  ros-galactic-pendulum-control ros-galactic-pendulum-msgs
+  ros-galactic-qt-dotgraph ros-galactic-qt-gui-cpp
+  ros-galactic-qt-gui-py-common ros-galactic-quality-of-service-demo-cpp
+  ros-galactic-quality-of-service-demo-py ros-galactic-ros-core
+  ros-galactic-ros-environment ros-galactic-ros2action ros-galactic-ros2bag
+  ros-galactic-ros2cli-common-extensions ros-galactic-ros2component
+  ros-galactic-ros2doctor ros-galactic-ros2interface ros-galactic-ros2launch
+  ros-galactic-ros2lifecycle ros-galactic-ros2multicast ros-galactic-ros2topic
+  ros-galactic-rosbag2 ros-galactic-rosbag2-compression
+  ros-galactic-rosbag2-compression-zstd ros-galactic-rosbag2-cpp
+  ros-galactic-rosbag2-interfaces ros-galactic-rosbag2-py
+  ros-galactic-rosbag2-storage ros-galactic-rosbag2-storage-default-plugins
+  ros-galactic-rosbag2-transport ros-galactic-rqt-action ros-galactic-rqt-bag
+  ros-galactic-rqt-bag-plugins ros-galactic-rqt-common-plugins
+  ros-galactic-rqt-console ros-galactic-rqt-graph ros-galactic-rqt-gui-cpp
+  ros-galactic-rqt-image-view ros-galactic-rqt-msg ros-galactic-rqt-plot
+  ros-galactic-rqt-publisher ros-galactic-rqt-py-console
+  ros-galactic-rqt-reconfigure ros-galactic-rqt-service-caller
+  ros-galactic-rqt-shell ros-galactic-rqt-srv ros-galactic-rqt-top
+  ros-galactic-rttest ros-galactic-shared-queues-vendor
+  ros-galactic-sqlite3-vendor ros-galactic-sros2 ros-galactic-sros2-cmake
+  ros-galactic-tlsf ros-galactic-tlsf-cpp ros-galactic-topic-monitor
+  ros-galactic-turtlesim ros-galactic-zstd-vendor
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 541 not upgraded.
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  28.26MB
+Step 1/9 : FROM osrf/ros:noetic-desktop-full-focal
+ ---> 69a38b2c0905
+Step 2/9 : ENV LANG C.UTF-8
+ ---> Using cache
+ ---> 2c6e802ecee0
+Step 3/9 : ENV DEBIAN_FRONTEND=noninteractive
+ ---> Using cache
+ ---> d94dfa21df15
+Step 4/9 : SHELL [ "/bin/bash" , "-c" ]
+ ---> Using cache
+ ---> 214d96bf33c9
+Step 5/9 : RUN apt-get update && apt-get upgrade -y && apt-get install -y   gazebo11   ros-noetic-gazebo-ros-pkgs   ros-noetic-gazebo-ros-control   ros-noetic-ros-control   ros-noetic-ros-controllers   ros-noetic-joint-state-publisher   ros-noetic-joint-state-controller   ros-noetic-robot-state-publisher   ros-noetic-robot-localization   ros-noetic-xacro   ros-noetic-tf2-ros   ros-noetic-tf2-tools   && rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 29b9ad3791c3
+Step 6/9 : RUN mkdir -p /simulation_ws/src
+ ---> Using cache
+ ---> e7015c561f8e
+Step 7/9 : COPY ./tortoisebot /simulation_ws/src/tortoisebot
+ ---> 0c681b189453
+Step 8/9 : COPY ./tortoisebot_waypoints /simulation_ws/src/tortoisebot_waypoints
+ ---> f02a09ec8566
+Step 9/9 : RUN source /opt/ros/noetic/setup.bash && cd /simulation_ws && catkin_make   && echo "source /simulation_ws/devel/setup.bash" >> ~/.bashrc
+ ---> Running in af61bcf0be9c
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /simulation_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /simulation_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.12
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 8 packages in topological order:
+-- ~~  - tortoisebot_control
+-- ~~  - tortoisebot_description
+-- ~~  - tortoisebot_firmware
+-- ~~  - tortoisebot_gazebo
+-- ~~  - tortoisebot_navigation
+-- ~~  - tortoisebot_slam
+-- ~~  - tortoisebot_waypoints
+-- ~~  - ydlidar_ros
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'tortoisebot_control'
+-- ==> add_subdirectory(tortoisebot/tortoisebot_control)
+-- +++ processing catkin package: 'tortoisebot_description'
+-- ==> add_subdirectory(tortoisebot/tortoisebot_description)
+-- +++ processing catkin package: 'tortoisebot_firmware'
+-- ==> add_subdirectory(tortoisebot/tortoisebot_firmware)
+-- +++ processing catkin package: 'tortoisebot_gazebo'
+-- ==> add_subdirectory(tortoisebot/tortoisebot_gazebo)
+[91mCMake Warning at /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:166 (message):
+  catkin_package() DEPENDS on 'gazebo' but neither 'gazebo_INCLUDE_DIRS' nor
+  'gazebo_LIBRARIES' is defined.
+Call Stack (most recent call first):
+  /opt/ros/noetic/share/catkin/cmake/catkin_package.cmake:102 (_catkin_package)
+  tortoisebot/tortoisebot_gazebo/CMakeLists.txt:105 (catkin_package)
+
+
+[0m-- +++ processing catkin package: 'tortoisebot_navigation'
+-- ==> add_subdirectory(tortoisebot/tortoisebot_navigation)
+-- +++ processing catkin package: 'tortoisebot_slam'
+-- ==> add_subdirectory(tortoisebot/tortoisebot_slam)
+-- +++ processing catkin package: 'tortoisebot_waypoints'
+-- ==> add_subdirectory(tortoisebot_waypoints)
+-- Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+-- Generating .msg files for action tortoisebot_waypoints/WaypointAction /simulation_ws/src/tortoisebot_waypoints/action/WaypointAction.action
+Generating for action WaypointAction
+-- tortoisebot_waypoints: 7 messages, 0 services
+-- Installing devel-space wrapper /simulation_ws/src/tortoisebot_waypoints/scripts/tortoisebot_action_server.py to /simulation_ws/devel/lib/tortoisebot_waypoints
+-- +++ processing catkin package: 'ydlidar_ros'
+-- ==> add_subdirectory(tortoisebot/ydlidar_ros)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /simulation_ws/build
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionActionFeedback
+Scanning dependencies of target geometry_msgs_generate_messages_eus
+Scanning dependencies of target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionActionResult
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionAction
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionResult
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionFeedback
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionActionGoal
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_eus
+Scanning dependencies of target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionGoal
+Scanning dependencies of target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionActionResult
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionActionFeedback
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionAction
+Scanning dependencies of target actionlib_msgs_generate_messages_py
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionFeedback
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionResult
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionActionGoal
+Scanning dependencies of target geometry_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_py
+Scanning dependencies of target actionlib_msgs_generate_messages_nodejs
+Scanning dependencies of target geometry_msgs_generate_messages_lisp
+Scanning dependencies of target actionlib_msgs_generate_messages_lisp
+Scanning dependencies of target geometry_msgs_generate_messages_cpp
+Scanning dependencies of target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target _tortoisebot_waypoints_generate_messages_check_deps_WaypointActionGoal
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+Scanning dependencies of target tortoisebot_waypoints_generate_messages_nodejs
+Scanning dependencies of target tortoisebot_waypoints_generate_messages_eus
+Scanning dependencies of target tortoisebot_waypoints_generate_messages_lisp
+Scanning dependencies of target ydlidar_client
+Scanning dependencies of target tortoisebot_waypoints_generate_messages_py
+Scanning dependencies of target tortoisebot_waypoints_generate_messages_cpp
+Scanning dependencies of target ydlidar_node
+[  2%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionAction.msg
+[  4%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionActionGoal.msg
+[  6%] Generating Javascript code from tortoisebot_waypoints/WaypointActionAction.msg
+[  8%] Generating Python from MSG tortoisebot_waypoints/WaypointActionAction
+[ 10%] Generating Lisp code from tortoisebot_waypoints/WaypointActionAction.msg
+[ 12%] Generating C++ code from tortoisebot_waypoints/WaypointActionAction.msg
+[ 14%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_client.dir/src/ydlidar_client.cpp.o
+[ 16%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/src/ydlidar_node.cpp.o
+[ 18%] Generating Lisp code from tortoisebot_waypoints/WaypointActionActionGoal.msg
+[ 20%] Generating Javascript code from tortoisebot_waypoints/WaypointActionActionGoal.msg
+[ 22%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionActionResult.msg
+[ 25%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionActionFeedback.msg
+[ 27%] Generating Lisp code from tortoisebot_waypoints/WaypointActionActionResult.msg
+[ 29%] Generating Javascript code from tortoisebot_waypoints/WaypointActionActionResult.msg
+[ 31%] Generating C++ code from tortoisebot_waypoints/WaypointActionActionGoal.msg
+[ 33%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionGoal.msg
+[ 35%] Generating Lisp code from tortoisebot_waypoints/WaypointActionActionFeedback.msg
+[ 37%] Generating Javascript code from tortoisebot_waypoints/WaypointActionActionFeedback.msg
+[ 39%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionResult.msg
+[ 41%] Generating Python from MSG tortoisebot_waypoints/WaypointActionActionGoal
+[ 43%] Generating Lisp code from tortoisebot_waypoints/WaypointActionGoal.msg
+[ 45%] Generating Javascript code from tortoisebot_waypoints/WaypointActionGoal.msg
+[ 47%] Generating EusLisp code from tortoisebot_waypoints/WaypointActionFeedback.msg
+[ 50%] Generating EusLisp manifest code for tortoisebot_waypoints
+[ 52%] Generating Lisp code from tortoisebot_waypoints/WaypointActionResult.msg
+[ 54%] Generating C++ code from tortoisebot_waypoints/WaypointActionActionResult.msg
+[ 56%] Generating Javascript code from tortoisebot_waypoints/WaypointActionResult.msg
+[ 58%] Generating C++ code from tortoisebot_waypoints/WaypointActionActionFeedback.msg
+[ 60%] Generating Lisp code from tortoisebot_waypoints/WaypointActionFeedback.msg
+[ 62%] Generating Javascript code from tortoisebot_waypoints/WaypointActionFeedback.msg
+[ 62%] Built target tortoisebot_waypoints_generate_messages_lisp
+[ 62%] Built target tortoisebot_waypoints_generate_messages_nodejs
+[ 64%] Generating C++ code from tortoisebot_waypoints/WaypointActionGoal.msg
+[ 66%] Generating Python from MSG tortoisebot_waypoints/WaypointActionActionResult
+[ 68%] Generating Python from MSG tortoisebot_waypoints/WaypointActionActionFeedback
+[ 70%] Generating C++ code from tortoisebot_waypoints/WaypointActionResult.msg
+[ 72%] Generating C++ code from tortoisebot_waypoints/WaypointActionFeedback.msg
+[ 75%] Generating Python from MSG tortoisebot_waypoints/WaypointActionGoal
+[ 77%] Generating Python from MSG tortoisebot_waypoints/WaypointActionResult
+[ 79%] Generating Python from MSG tortoisebot_waypoints/WaypointActionFeedback
+[ 81%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/CYdLidar.cpp.o
+[ 81%] Built target tortoisebot_waypoints_generate_messages_cpp
+[ 83%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/list_ports_linux.cpp.o
+[ 85%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_serial.cpp.o
+[ 87%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/impl/unix/unix_timer.cpp.o
+[ 87%] Built target tortoisebot_waypoints_generate_messages_eus
+[ 89%] Building C object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/lock.c.o
+[ 91%] Generating Python msg __init__.py for tortoisebot_waypoints
+[ 93%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/serial.cpp.o
+[ 95%] Building CXX object tortoisebot/ydlidar_ros/CMakeFiles/ydlidar_node.dir/sdk/src/ydlidar_driver.cpp.o
+[ 95%] Built target tortoisebot_waypoints_generate_messages_py
+Scanning dependencies of target tortoisebot_waypoints_generate_messages
+[ 95%] Built target tortoisebot_waypoints_generate_messages
+[ 97%] Linking CXX executable /simulation_ws/devel/lib/ydlidar_ros/ydlidar_node
+[ 97%] Built target ydlidar_node
+[100%] Linking CXX executable /simulation_ws/devel/lib/ydlidar_ros/ydlidar_client
+[100%] Built target ydlidar_client
+Base path: /simulation_ws
+Source space: /simulation_ws/src
+Build space: /simulation_ws/build
+Devel space: /simulation_ws/devel
+Install space: /simulation_ws/install
+Creating symlink "/simulation_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /simulation_ws/src -DCATKIN_DEVEL_PREFIX=/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/simulation_ws/install -G Unix Makefiles" in "/simulation_ws/build"
+####
+####
+#### Running command: "make -j8 -l8" in "/simulation_ws/build"
+####
+ ---> Removed intermediate container af61bcf0be9c
+ ---> 33ad38fd94a0
+Successfully built 33ad38fd94a0
+Successfully tagged tortoisebot-ros-test:latest
+[TortoisebotWaypointsTest] $ /bin/bash /tmp/jenkins2973556090353442374.sh
+28696fb226d7eebe631dd63150a5761dd636a0ae45b5b4b0e0f1685f54ce3a22
+Finished: SUCCESS
