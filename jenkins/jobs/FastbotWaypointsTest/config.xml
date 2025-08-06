@@ -1,7 +1,7 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
   <actions/>
-  <description>A project for testing ROS Tortoisebot in Gazebo/Docker environment.</description>
+  <description>A project for testing ROS2 Fastbot in Gazebo/Docker environment.</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
   <scm class="hudson.plugins.git.GitSCM" plugin="git@5.5.2">
