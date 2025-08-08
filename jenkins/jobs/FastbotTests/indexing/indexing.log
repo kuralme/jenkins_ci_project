@@ -1,0 +1,25 @@
+Started by user [8mha:////4DlyfUWKjPYAWx9pM5RfCnLNUEKc41ML4XlwjJeMCXUkAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+[Fri Aug 08 08:40:03 UTC 2025] Starting branch indexing...
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote --symref -- https://github.com/kuralme/ros2_ci.git # timeout=10
+ > git rev-parse --resolve-git-dir /home/user/ros2_ws/src/ros2_ci/jenkins_ci_project/jenkins/caches/git-c377938b1a8ddff76cb53fdaf1e543f1/.git # timeout=10
+Setting origin to https://github.com/kuralme/ros2_ci.git
+ > git config remote.origin.url https://github.com/kuralme/ros2_ci.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > git config --get remote.origin.url # timeout=10
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git ls-remote -h -- https://github.com/kuralme/ros2_ci.git # timeout=10
+Fetching upstream changes from origin
+ > git config --get remote.origin.url # timeout=10
+ > git fetch --tags --force --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch main
+      ‘Jenkinsfile’ found
+    Met criteria
+No changes detected: main (still at c58428be29e306ebdfadafa109a7a3a482db61f0)
+Processed 1 branches
+[Fri Aug 08 08:40:04 UTC 2025] Finished branch indexing. Indexing took 0.51 sec
+Finished: SUCCESS

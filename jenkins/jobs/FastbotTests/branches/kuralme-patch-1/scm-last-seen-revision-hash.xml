@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@5.5.2">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>kuralme-patch-1</name>
+  </head>
+  <hash>2e6b7aa84eabf0e194dba120d597b0e1d89eed41</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>
