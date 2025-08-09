@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.branch.MultiBranchProject_-State plugin="branch-api@2.1206.vd9f35001c95c">
+  <sourceActions>
+    <entry>
+      <string>380b8771-6cf3-4455-9a22-364af94895c0</string>
+      <list>
+        <jenkins.plugins.git.GitRemoteHeadRefAction plugin="git@5.5.2">
+          <remote>https://github.com/kuralme/ros1_ci.git</remote>
+          <name>main</name>
+        </jenkins.plugins.git.GitRemoteHeadRefAction>
+      </list>
+    </entry>
+  </sourceActions>
+</jenkins.branch.MultiBranchProject_-State>

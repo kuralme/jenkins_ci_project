@@ -2,3 +2,7 @@ FastbotCITests/kuralme-patch-1
 FastbotCITests_kuralme-patch-1
 FastbotCITests/main
 FastbotCITests_main
+TortoisebotCITests/kuralme-patch-1
+rtoisebotCITests_kuralme-patch-1
+TortoisebotCITests/main
+TortoisebotCITests_main
