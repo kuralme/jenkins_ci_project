@@ -1,0 +1,29 @@
+commit 3b40f0960f337334509333caa3fc5025d69acda8
+tree 911bfd361abb23105cac29cee3f2bf515560aad2
+parent 0d225e3684996c5c92755c5e2dbaecf76b781021
+author kuralme <kuralme@protonmail.com> 2025-08-09 07:27:08 +0000
+committer kuralme <kuralme@protonmail.com> 2025-08-09 07:27:08 +0000
+
+    jenkinsfile updated for testing docker
+
+
+:100644 100644 2a835d5a272910d4c88d48ef631c47ee70faaedb 070010f5841c0e778e22c91bcc29140414384363 M	Jenkinsfile
+commit 0d225e3684996c5c92755c5e2dbaecf76b781021
+tree 9cb27865608cf5854fb6c6c98f64c13f4aaee0da
+parent 5712b7297eff0ee0eaba8a1d5c4086f308ee5f2a
+author kuralme <kuralme@protonmail.com> 2025-08-09 07:17:28 +0000
+committer kuralme <kuralme@protonmail.com> 2025-08-09 07:17:28 +0000
+
+    added multibranch project
+
+
+:160000 160000 2ea3bcaf551afc108c8d49c41364d23e3b470eaf f6490f620ab3da8e8813b2c2f888db57d29ea6c5 M	jenkins_ci_project
+commit 5712b7297eff0ee0eaba8a1d5c4086f308ee5f2a
+tree 78daca1c4fccc9301954bed6eb359d595003ff98
+parent c58428be29e306ebdfadafa109a7a3a482db61f0
+author Ege Kural <kuralme@protonmail.com> 2025-08-09 03:05:18 -0400
+committer GitHub <noreply@github.com> 2025-08-09 03:05:18 -0400
+
+    Delete text.txt
+
+:100644 000000 074b8a95731dbde83dce1ea7d452518855a4aad4 0000000000000000000000000000000000000000 D	text.txt

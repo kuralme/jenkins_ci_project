@@ -1,0 +1,10 @@
+commit 7fbe45d94a4255a257577bd83fb27fcd5734525f
+tree 8ab0e1e36f0f6a519728aee428dc3bc20feaed35
+parent 3b40f0960f337334509333caa3fc5025d69acda8
+author kuralme <kuralme@protonmail.com> 2025-08-09 07:36:29 +0000
+committer kuralme <kuralme@protonmail.com> 2025-08-09 07:38:21 +0000
+
+    ros key deprecated fix
+
+
+:100644 100644 070010f5841c0e778e22c91bcc29140414384363 2777294c0f01289f3e0f5016cc55fe27d6271694 M	Jenkinsfile
